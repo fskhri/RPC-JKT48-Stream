@@ -37,7 +37,7 @@ def create_rich_presence(user, image, stream_url, title, view_count, live_at, sl
     large_text = user['name']
 
     # URL tombol "Watch Stream"
-    watch_stream_url = f"https://www.idn.app/jkt48_fritzy/live/{slug}"
+    watch_stream_url = f"https://www.idn.app/{user['username']}/live/{slug}"
 
     # Set Rich Presence
     RPC.update(
